@@ -1,0 +1,43 @@
+.container-icon{
+  background: #e1f1dd;
+  display:flex;
+  justify-content: center;
+  padding-top: 50px;
+  padding-bottom: 60px;
+  padding-right: 20px;
+
+i{
+  display: flex;
+  justify-content: center;
+  font-size:30px;
+  color: #0080FF;
+  margin-left: 30px;
+}
+h2 {
+  text-align: center;
+  font-size: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-left: 20px;
+}
+p{
+  padding-left:30px;
+  text-align:center;
+  font-size: 11px;
+}
+}
+.icon::after {
+  content: "";
+  clear: both;
+  display: column;
+  float:left;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .container-icon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
